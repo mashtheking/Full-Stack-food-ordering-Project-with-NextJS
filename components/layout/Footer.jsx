@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center mt-10">
-          © 2022 All Rights Reserved By Free Html Templates
+          © 2025 All Rights Reserved By Authentic African Cuisine
         </p>
       </div>
     </div>
