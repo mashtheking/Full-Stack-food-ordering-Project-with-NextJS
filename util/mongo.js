@@ -1,7 +1,8 @@
 // This approach is taken from https://github.com/vercel/next.js/tree/canary/examples/with-mongodb
 import { MongoClient } from "mongodb";
 
-const uri = "mongodb+srv://mamashibigbro:TpgmEbJ4jYMwjiNF@foodstore.nh3xl.mongodb.net/?food-ordering?retryWrites=true&w=majority;"
+const uri = "mongodb+srv://mamashibigbro:TpgmEbJ4jYMwjiNF@foodstore.nh3xl.mongodb.net/?retryWrites=true&w=majority&appName=foodstore"
+
 const options = {
   useUnifiedTopology: true,
   useNewUrlParser: true,
