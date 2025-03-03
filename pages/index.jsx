@@ -24,9 +24,9 @@ export default function Index({ categoryList, productList }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/categories`);
+  const res = await axios.get(`https://full-stack-food-ordering-project-with-next-js-six.vercel.app/api/categories/categories`);
   const product = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_URL}/products`
+    `https://full-stack-food-ordering-project-with-next-js-six.vercel.app/api/categories/products`
   );
   return {
     props: {
