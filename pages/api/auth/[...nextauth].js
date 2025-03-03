@@ -12,8 +12,8 @@ export default NextAuth({
   /*  adapter: MongoDBAdapter(clientPromise), */
   providers: [
     GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
+      clientId: "gth1d" ,
+      clientSecret: "fhfdddggfd",
     }),
     CredentialsProvider({
       name: "Credentials",
