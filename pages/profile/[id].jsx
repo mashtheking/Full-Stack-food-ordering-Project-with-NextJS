@@ -89,7 +89,7 @@ const Profile = ({ user }) => {
 
 export async function getServerSideProps({ req, params }) {
   const user = await axios.get(
-    `https://full-stack-food-ordering-project-with-next-js-six.vercel.app/users/${params.id}`
+    `https://full-stack-food-ordering-project-with-next-js-six.vercel.app/api/users/${params.id}`
   );
 
   return {
