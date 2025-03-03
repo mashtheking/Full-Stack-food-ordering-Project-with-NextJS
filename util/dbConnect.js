@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = "mongodb+srv://mamashibigbro:<db_password>@foodstore.nh3xl.mongodb.net/?retryWrites=true&w=majority&appName=foodstore";
+const MONGODB_URI = "mongodb+srv://mamashibigbro:TpgmEbJ4jYMwjiNF@foodstore.nh3xl.mongodb.net/?retryWrites=true&w=majority&appName=foodstore";
 
 if (!MONGODB_URI) {
   throw new Error(
