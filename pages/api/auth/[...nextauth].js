@@ -38,7 +38,7 @@ export default NextAuth({
   pages: {
     signIn: "/auth/login",
   },
-  database: "mongodb+srv://mamashibigbro:TpgmEbJ4jYMwjiNF@foodstore.nh3xl.mongodb.net/?food-ordering?retryWrites=true&w=majority&directConnection=true",
+  database: "mongodb+srv://mamashibigbro:TpgmEbJ4jYMwjiNF@foodstore.nh3xl.mongodb.net/?retryWrites=true&w=majority&appName=foodstore&directConnection=true",
   secret: "secret",
 });
 
