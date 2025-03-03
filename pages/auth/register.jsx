@@ -12,7 +12,7 @@ const Register = () => {
   const onSubmit = async (values, actions) => {
     try {
       const res = await axios.post(
-    `https://full-stack-food-ordering-project-with-next-js-six.vercel.app/users/register`,
+    `https://full-stack-food-ordering-project-with-next-js-six.vercel.app/api/users/register`,
         values
       );
       if (res.status === 200) {
