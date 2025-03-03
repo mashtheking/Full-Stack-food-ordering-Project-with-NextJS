@@ -118,7 +118,7 @@ const Login = () => {
 export async function getServerSideProps({ req }) {
   const session = await getSession({ req });
 
-  const res = await axios.get(`https://full-stack-food-ordering-project-with-next-js-six.vercel.app//users`);
+  const res = await axios.get(`https://full-stack-food-ordering-project-with-next-js-six.vercel.app/users`);
   const user = res.data?.find((user) => user.email === session?.user.email);
   if (session && user) {
     return {
