@@ -138,7 +138,7 @@ const Index = ({ food }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_URL}/products/${params.id}`
+    `https://full-stack-food-ordering-project-with-next-js-six.vercel.app/products/${params.id}`
   );
   return {
     props: {
