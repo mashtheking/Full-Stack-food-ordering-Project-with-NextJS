@@ -38,7 +38,7 @@ export default NextAuth({
   pages: {
     signIn: "/auth/login",
   },
-  database: process.env.MONGODB_URI,
+  database: "mongodb+srv://mamashibigbro:TpgmEbJ4jYMwjiNF@foodstore.nh3xl.mongodb.net/?food-ordering?retryWrites=true&w=majority;",
   secret: "secret",
 });
 
