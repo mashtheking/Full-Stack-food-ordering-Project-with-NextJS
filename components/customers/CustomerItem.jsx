@@ -5,13 +5,11 @@ const CustomerItem = ({ imgSrc }) => {
     <div className="mt-5 mx-4">
       <div className="p-6 bg-secondary text-white rounded-[5px]">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
+          Yummy
         </p>
         <div className="flex flex-col mt-4">
-          <span className="text-lg font-semibold">Moana Michell</span>
-          <span className="text-[15px]">magna aliqua</span>
+          <span className="text-lg font-semibold">Fred Mash</span>
+          <span className="text-[15px]">Customer</span>
         </div>
       </div>
 
@@ -20,7 +18,7 @@ const CustomerItem = ({ imgSrc }) => {
       flex justify-center before:-translate-y-3 before:rotate-45 before:bg-primary before:w-5 before:h-5 "
       >
         <Image
-          src={imgSrc}
+          src="/"
           alt=""
           layout="fill"
           objectFit="contain"
