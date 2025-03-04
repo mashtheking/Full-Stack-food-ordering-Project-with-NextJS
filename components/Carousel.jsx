@@ -41,7 +41,7 @@ const Carousel = () => {
           <div className="mt-48  text-white flex flex-col items-start gap-y-10">
             <Title addClass="text-6xl">African Cuisine</Title>
             <p className="text-sm sm:w-2/5 w-full">
-              Order African food abroad
+              Order African food in U.S.A and Canada.
             </p>
             <Link href="/menu"> <button className="btn-primary">Order Now</button>
 </Link>
@@ -51,7 +51,7 @@ const Carousel = () => {
           <div className="relative text-white top-48 flex flex-col items-start gap-y-10">
             <Title addClass="text-6xl">African Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
-              Book a cook out.
+              Book a cookout.
             </p>
            <Link href="/reservation"> <button className="btn">Reserve Now</button>
 </Link>
