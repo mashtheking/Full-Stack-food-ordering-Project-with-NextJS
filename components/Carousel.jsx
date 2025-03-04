@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Title from "./ui/Title";
 import Slider from "react-slick";
-import Link from "next/link";
+
 
 const Carousel = () => {
   const settings = {
