@@ -15,7 +15,7 @@ const About = () => {
           <p className="my-5 flex flex-col items-center">
             We provide Africans abroad with Authentic African cuisine.
           </p>
-          <button className="btn-primary">Read More</button>
+          
         </div>
       </div>
     </div>
