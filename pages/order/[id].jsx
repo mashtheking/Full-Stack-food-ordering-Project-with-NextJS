@@ -16,6 +16,11 @@ const initialOptions = {
   intent: "capture",
 };
 
+const styles = {
+        shape: "rect",
+        layout: "vertical",
+    };
+
   return (
     <div className="overflow-x-auto">
       <div className="min-h-[calc(100vh_-_433px)] flex  justify-center items-center flex-col p-10  min-w-[1000px]">
