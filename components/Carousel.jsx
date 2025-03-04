@@ -43,8 +43,9 @@ const Carousel = () => {
             <p className="text-sm sm:w-2/5 w-full">
               Order African food in U.S.A and Canada.
             </p>
-            <Link href="/menu"> <button className="btn-primary">Order Now</button>
-</Link>
+             <button className="btn-primary">
+<Link href="/menu">Order Now</Link></button>
+
           </div>
         </div>
         <div>
@@ -53,8 +54,8 @@ const Carousel = () => {
             <p className="text-sm sm:w-2/5 w-full">
               Book a cookout.
             </p>
-           <Link href="/reservation"> <button className="btn">Reserve Now</button>
-</Link>
+           <button className="btn"> <Link href="/reservation">Reserve Now
+</Link></button>
           </div>
         </div>
       </Slider>
