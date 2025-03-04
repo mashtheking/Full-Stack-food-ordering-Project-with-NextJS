@@ -49,9 +49,9 @@ const Carousel = () => {
           <div className="relative text-white top-48 flex flex-col items-start gap-y-10">
             <Title addClass="text-6xl">African Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
-              Book a table.
+              Book a cook out.
             </p>
-            <button className="btn-primary">Order Now</button>
+            <button className="btn-primary">Reserve Now</button>
           </div>
         </div>
       </Slider>
