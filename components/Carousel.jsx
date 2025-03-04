@@ -60,35 +60,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-
-
-
-
-
-
-
-
-            <p className="text-sm sm:w-2/5 w-full">
-              Order African food in U.S.A and Canada.
-            </p>
-             
-
-
-          </div>
-        </div>
-        <div>
-          <div className="relative text-white top-48 flex flex-col items-start gap-y-10">
-            <Title addClass="text-6xl">African Food Restaurant</Title>
-            <p className="text-sm sm:w-2/5 w-full">
-              Book a cookout.
-            </p>
- 
-          </div>
-        </div>
-      </Slider>
-    </div>
-  );
-};
-
-export default Carousel;
