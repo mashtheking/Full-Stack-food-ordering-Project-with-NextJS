@@ -1,5 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const Order = ({ order }) => {
   const status = order?.status;
@@ -49,13 +50,9 @@ const Order = ({ order }) => {
         </div>
         <div className="flex justify-between w-full p-10 bg-primary mt-6">
           <div className={`relative flex flex-col ${statusClass(0)}`}>
-            <Image
-              src="/images/paid.png"
-              alt=""
-              width={40}
-              height={40}
-              objectFit="contain"
-            />
+            <PayPalScriptProvider options={initialOptions}>
+                <PayPalButtons style={styles} />
+            </PayPalScriptProvider>
             <span>Payment</span>
           </div>
           <div className={`relative flex flex-col ${statusClass(1)}`}>
