@@ -13,7 +13,7 @@ const About = () => {
         <div className="md:w-1/2 ">
           <Title addClass="text-[40px]">We Are Authentic African cuisine</Title>
           <p className="my-5 flex flex-col items-center">
-            We provide Africans abroad with Authentic African cuisine.
+            We provide Africans abroad with Authentic African cuisine in U.S.A and Canada.
           </p>
           
         </div>
