@@ -2,7 +2,6 @@ import Image from "next/image";
 import Title from "./ui/Title";
 import Slider from "react-slick";
 
-
 const Carousel = () => {
   const settings = {
     dots: true,
@@ -39,7 +38,37 @@ const Carousel = () => {
       <Slider {...settings}>
         <div>
           <div className="mt-48  text-white flex flex-col items-start gap-y-10">
-            <Title addClass="text-6xl">African Cuisine</Title>
+            <Title addClass="text-6xl">Authentic African Cuisine</Title>
+            <p className="text-sm sm:w-2/5 w-full">
+              African foods when abroad.
+            </p>
+            <button className="btn-primary">Order Now</button>
+          </div>
+        </div>
+        <div>
+          <div className="relative text-white top-48 flex flex-col items-start gap-y-10">
+            <Title addClass="text-6xl">Yummy African Meals</Title>
+            <p className="text-sm sm:w-2/5 w-full">
+              Delivery available for U.S.A and Canada.
+            </p>
+            <button className="btn-primary">Order Now</button>
+          </div>
+        </div>
+      </Slider>
+    </div>
+  );
+};
+
+export default Carousel;
+
+
+
+
+
+
+
+
+
             <p className="text-sm sm:w-2/5 w-full">
               Order African food in U.S.A and Canada.
             </p>
