@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Title from "./ui/Title";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const Carousel = () => {
   const settings = {
@@ -42,7 +43,8 @@ const Carousel = () => {
             <p className="text-sm sm:w-2/5 w-full">
               Order African food abroad
             </p>
-            <button className="btn-primary">Order Now</button>
+            <Link href="/menu"> <button className="btn-primary">Order Now</button>
+</Link>
           </div>
         </div>
         <div>
@@ -51,7 +53,8 @@ const Carousel = () => {
             <p className="text-sm sm:w-2/5 w-full">
               Book a cook out.
             </p>
-            <button className="btn-primary">Reserve Now</button>
+           <Link href="/reservation"> <button className="btn">Reserve Now</button>
+</Link>
           </div>
         </div>
       </Slider>
