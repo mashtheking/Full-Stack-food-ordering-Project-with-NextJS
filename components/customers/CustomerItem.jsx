@@ -18,7 +18,8 @@ const CustomerItem = ({ imgSrc }) => {
       flex justify-center before:-translate-y-3 before:rotate-45 before:bg-primary before:w-5 before:h-5 "
       >
         <Image
-          src="/"
+          src="
+{imgSrc}"
           alt=""
           layout="fill"
           objectFit="contain"
