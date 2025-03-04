@@ -58,7 +58,7 @@ const Header = () => {
               }`}
               onClick={() => setIsMenuModal(false)}
             >
-              <Link href="/reservation">Book Table</Link>
+              <Link href="/reservation">Book Cookout</Link>
             </li>
           </ul>
           {isMenuModal && (
