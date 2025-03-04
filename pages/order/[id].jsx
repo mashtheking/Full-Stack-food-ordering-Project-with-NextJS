@@ -14,6 +14,7 @@ const initialOptions = {
   "client-id": "AZ9wjyzRaq1x4UehdhLkj2EJEtOYoxUM20xyATjaOAm_LRkEjSw0Ddj9IAbRQOmVjLoBTaybaQgpSqHB",
   currency: "USD",
   intent: "capture",
+amount: order?.total
 };
 
 const styles = {
@@ -21,7 +22,7 @@ const styles = {
         layout: "vertical",
     };
 
-const message = {
+const messages = {
         amount: order?.total,
         align: "center",
     };
