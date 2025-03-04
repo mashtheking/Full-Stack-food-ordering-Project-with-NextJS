@@ -54,7 +54,7 @@ const Carousel = () => {
             <p className="text-sm sm:w-2/5 w-full">
               Book a cookout.
             </p>
- </button>
+ 
           </div>
         </div>
       </Slider>
