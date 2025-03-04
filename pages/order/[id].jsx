@@ -26,6 +26,25 @@ const message = {
         align: "center",
     };
 
+const onCreateOrder = (data,actions) => {
+        return actions.order.create({
+            purchase_units: [
+                {
+                    amount: {
+                        value: order?.total,
+                    },
+                },
+            ],
+        });
+    }
+
+    const onApproveOrder = (data,actions) => {
+        return actions.order.capture().then((details) => {
+            const name = details.payer.name.given_name;
+            alert(`Transaction completed by ${name}`);
+        });
+    }
+
   return (
     <div className="overflow-x-auto">
       <div className="min-h-[calc(100vh_-_433px)] flex  justify-center items-center flex-col p-10  min-w-[1000px]">
@@ -68,7 +87,8 @@ const message = {
         <div className="flex justify-between w-full p-10 bg-primary mt-6">
           <div className={`relative flex flex-col ${statusClass(0)}`}>
             <PayPalScriptProvider options={initialOptions}>
-                <PayPalButtons style={styles} />
+                <PayPalButtons createOrder={(data, actions) => onCreateOrder(data, actions)}
+                        onApprove={(data, actions) => onApproveOrder(data, actions)} style={styles} />
             </PayPalScriptProvider>
             <span>Payment</span>
           </div>
