@@ -22,10 +22,7 @@ const styles = {
         layout: "vertical",
     };
 
-const messages = {
-        amount: order?.total,
-        align: "center",
-    };
+
 
 
     
