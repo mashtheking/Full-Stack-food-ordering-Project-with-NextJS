@@ -4,6 +4,7 @@ import Title from "../../components/ui/Title";
 import { addProduct } from "../../redux/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const Index = ({ food }) => {
   const [prices, setPrices] = useState(food.prices);
