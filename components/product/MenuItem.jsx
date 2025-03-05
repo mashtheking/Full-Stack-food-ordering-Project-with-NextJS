@@ -3,7 +3,6 @@ import Link from "next/link";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { useSelector, useDispatch } from "react-redux";
 import { addProduct } from "../../redux/cartSlice";
-import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import {
   quantityDecrease,
