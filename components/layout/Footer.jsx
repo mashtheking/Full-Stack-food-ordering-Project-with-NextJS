@@ -24,9 +24,9 @@ const Footer = () => {
           <div className="md:flex-1">
             <Title addClass="text-[30px]">Contact Us</Title>
             <div className="flex flex-col gap-y-2 mt-3">
-              <a href={footer?.location} target="_blank" rel="noreferrer">
+              <a  target="_blank" rel="noreferrer">
                 <i className="fa fa-map-marker"></i>
-                <span className="inline-block ml-2">Location</span>
+                <span className="inline-block ml-2">Gaithersburg MD</span>
               </a>
               <div>
                 <i className="fa fa-phone"></i>
