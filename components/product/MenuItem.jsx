@@ -36,6 +36,24 @@ const quantityChange = (type, price) => {
       dispatch(quantityIncrease(price));
     }
   };
+const Cart = ({ userList }) => {
+  const { data: session } = useSession();
+
+  const cart = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    const productTitles = cart.products.map((product) => {
+      return {
+        title: product.title,
+        foodQuantity: product.foodQuantity,
+        extras: product.extras,
+      };
+    });
+    setProductState(productTitles);
+  }, [cart.products]);
+  console.log(productState);  
+
+const [productState, setProductState] = useState([]);
 
   return (
     <div className="bg-secondary rounded-3xl relative">
