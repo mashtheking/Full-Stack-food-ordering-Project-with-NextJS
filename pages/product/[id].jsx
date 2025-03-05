@@ -87,6 +87,21 @@ const quantityChange = (type, price) => {
         <span className="text-primary text-2xl font-bold underline underline-offset-1 my-4 inline-block">
           ${price}
         </span>
+
+ <button>
+                          <i
+                            className="fa-solid fa-chevron-left mr-3 text-primary"
+                            onClick={() => quantityChange(0, product)}
+                          ></i>
+                        </button>
+                        {product.foodQuantity}
+                        <button>
+                          <i
+                            className="fa-solid fa-chevron-right ml-3 text-primary"
+                            onClick={() => quantityChange(1, product)}
+                          ></i>
+                        </button>
+
         <p className="text-sm my-4 md:pr-24">{food.desc}</p>
         {food.category === "pizza" && (
           <div>
@@ -129,19 +144,6 @@ const quantityChange = (type, price) => {
           </div>
         )}
 
- <button>
-                          <i
-                            className="fa-solid fa-chevron-left mr-3 text-primary"
-                            onClick={() => quantityChange(0, product)}
-                          ></i>
-                        </button>
-                        {product.foodQuantity}
-                        <button>
-                          <i
-                            className="fa-solid fa-chevron-right ml-3 text-primary"
-                            onClick={() => quantityChange(1, product)}
-                          ></i>
-                        </button>
 
         <div className="flex gap-x-4 my-6 md:justify-start justify-center">
           {extraItems.map((item) => (
