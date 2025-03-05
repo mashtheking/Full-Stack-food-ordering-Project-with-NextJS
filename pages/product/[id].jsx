@@ -125,7 +125,10 @@ const Index = ({ food }) => {
             </label>
           ))}
         </div>
-        <button
+        
+<input className="w-5 h-5 accent-primary" placeholder="quantity"/>
+
+<button
           className="btn-primary"
           onClick={handleClick}
           disabled={findCart}
