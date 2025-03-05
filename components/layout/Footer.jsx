@@ -24,12 +24,13 @@ const Footer = () => {
   }, []);
   return (
 
+<div>
 <Link href="/cart">
             <span className="absolute bottom-10 left-10 bg-black text-white rounded-30">
               <FaShoppingCart
                 className={`hover:text-primary transition-all cursor-pointer`}
               />
-              <span className="w-4 h-4 text-xs grid place-content-center rounded-full bg-primary absolute -top-2 -right-3 text-black font-bold">
+              <span className="w-8 h-8 text-xs grid place-content-center rounded-full bg-primary absolute -top-2 -right-3 text-black font-bold">
                 {cart.products.length === 0 ? "0" : cart.products.length}
               </span>
             </span>
