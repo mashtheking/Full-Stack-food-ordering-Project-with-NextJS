@@ -1,6 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { PayPalScriptProvider, PayPalButton } from "@paypal/react-paypal-js";
 
 const Order = ({ order }) => {
   const status = order?.status;
