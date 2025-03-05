@@ -91,7 +91,7 @@ const Reservation = () => {
         </form>
         <div className="lg:flex-1 w-full">
 
-  <iframe width="81%" height="240px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Gaithersburg%2C%20MD%2C%20USA&zoom=4&maptype=roadmap" allowfullscreen></iframe>
+  <iframe width="81%" height="240px" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Gaithersburg%2C%20MD%2C%20USA&zoom=4&maptype=roadmap" ></iframe>
 
       </div>
     </div>
