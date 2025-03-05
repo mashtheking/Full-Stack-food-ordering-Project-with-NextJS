@@ -31,7 +31,7 @@ const Footer = () => {
               </span>
             </span>
           </Link>
-    </div>
+    
 
 
     <div className="bg-secondary text-white">
@@ -96,7 +96,7 @@ const Footer = () => {
           © 2025 All Rights Reserved By Authentic African Cuisine
         </p>
       </div>
-
+</div>
   );
 };
 
