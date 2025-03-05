@@ -57,7 +57,8 @@ const quantityChange = (type, price) => {
         <div className="flex justify-between items-center mt-4">
           <span>${product.prices[0]}</span>
 
- <button className="absolute left-5 bottom-4" >
+<div className="absolute left-5 bottom-4">
+ <button >
                           <i
                             className="fa-solid fa-chevron-left mr-3 text-primary"
                             onClick={() => quantityChange(0, product)}
@@ -70,7 +71,7 @@ const quantityChange = (type, price) => {
                             onClick={() => quantityChange(1, product)}
                           ></i>
                         </button>
-
+</div>
           <button
             className="btn-primary !w-10 !h-10 !rounded-full !p-0 grid place-content-center absolute bottom-4 right-5"
             disabled={findCart}
