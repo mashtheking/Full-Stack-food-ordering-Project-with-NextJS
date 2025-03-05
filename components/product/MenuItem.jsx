@@ -3,6 +3,13 @@ import Link from "next/link";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { useSelector, useDispatch } from "react-redux";
 import { addProduct } from "../../redux/cartSlice";
+import { useSession } from "next-auth/react";
+import { toast } from "react-toastify";
+import {
+  quantityDecrease,
+  quantityIncrease,
+  reset,
+} from "../../redux/cartSlice";
 
 const MenuItem = ({ product }) => {
   const cart = useSelector((state) => state.cart);
@@ -20,6 +27,14 @@ const MenuItem = ({ product }) => {
         foodQuantity: 1,
       })
     );
+  };
+const quantityChange = (type, price) => {
+    if (type === 0) {
+      dispatch(quantityDecrease(price));
+    }
+    if (type === 1) {
+      dispatch(quantityIncrease(price));
+    }
   };
 
   return (
@@ -41,6 +56,21 @@ const MenuItem = ({ product }) => {
         <p className="text-[15px]">{product.desc}</p>
         <div className="flex justify-between items-center mt-4">
           <span>${product.prices[0]}</span>
+
+ <button className="absolute left-5 bottom-4" >
+                          <i
+                            className="fa-solid fa-chevron-left mr-3 text-primary"
+                            onClick={() => quantityChange(0, product)}
+                          ></i>
+                        </button>
+                        {product.foodQuantity}
+                        <button>
+                          <i
+                            className="fa-solid fa-chevron-right ml-3 text-primary"
+                            onClick={() => quantityChange(1, product)}
+                          ></i>
+                        </button>
+
           <button
             className="btn-primary !w-10 !h-10 !rounded-full !p-0 grid place-content-center absolute bottom-4 right-5"
             disabled={findCart}
