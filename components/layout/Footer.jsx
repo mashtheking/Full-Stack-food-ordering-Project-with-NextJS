@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Title from "../ui/Title";
 import { FaShoppingCart } from "react-icons/fa";
+import Link from "next/link";
 import axios from "axios";
 
 const Footer = () => {
