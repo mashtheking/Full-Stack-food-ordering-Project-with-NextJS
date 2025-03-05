@@ -88,19 +88,6 @@ const quantityChange = (type, price) => {
           ${price}
         </span>
 
- <button>
-                          <i
-                            className="fa-solid fa-chevron-left mr-3 text-primary"
-                            onClick={() => quantityChange(0, product)}
-                          ></i>
-                        </button>
-                        {product.foodQuantity}
-                        <button>
-                          <i
-                            className="fa-solid fa-chevron-right ml-3 text-primary"
-                            onClick={() => quantityChange(1, product)}
-                          ></i>
-                        </button>
 
         <p className="text-sm my-4 md:pr-24">{food.desc}</p>
         {food.category === "pizza" && (
@@ -158,6 +145,20 @@ const quantityChange = (type, price) => {
           ))}
         </div>
         
+
+ <button>
+                          <i
+                            className="fa-solid fa-chevron-left mr-3 text-primary"
+                            onClick={() => quantityChange(0, product)}
+                          ></i>
+                        </button>
+                        {product.foodQuantity}
+                        <button>
+                          <i
+                            className="fa-solid fa-chevron-right ml-3 text-primary"
+                            onClick={() => quantityChange(1, product)}
+                          ></i>
+                        </button>
 
 <button
           className="btn-primary"
