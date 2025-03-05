@@ -1,8 +1,12 @@
+import { useState } from "react";
 import React, { useEffect, useState } from "react";
 import Title from "../ui/Title";
 import { FaShoppingCart } from "react-icons/fa";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 import axios from "axios";
+
+const cart = useSelector((state) => state.cart);
 
 const Footer = () => {
   const [footer, setFooter] = useState([]);
