@@ -28,7 +28,8 @@ const cart = useSelector((state) => state.cart);
 <div>
 <Link href="/cart">
 
-            <span className="absolute bottom-10 left-10 bg-black text-white rounded-30">
+            <span className="fixed bottom-10 left-10 bg-black text-white rounded-30">
+Cart 
               <FaShoppingCart
                 className={`hover:text-primary transition-all cursor-pointer`}
               />
