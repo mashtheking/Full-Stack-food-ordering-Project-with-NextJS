@@ -5,8 +5,6 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import axios from "axios";
 
-const cart = useSelector((state) => state.cart);
-
 const Footer = () => {
   const [footer, setFooter] = useState([]);
   useEffect(() => {
@@ -22,6 +20,9 @@ const Footer = () => {
     };
     getFooter();
   }, []);
+
+const cart = useSelector((state) => state.cart);
+
   return (
 
 <div>
