@@ -1,4 +1,3 @@
-import { useState } from "react";
 import React, { useEffect, useState } from "react";
 import Title from "../ui/Title";
 import { FaShoppingCart } from "react-icons/fa";
