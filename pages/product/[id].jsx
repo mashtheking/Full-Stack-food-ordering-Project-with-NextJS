@@ -3,6 +3,13 @@ import { useState } from "react";
 import Title from "../../components/ui/Title";
 import { addProduct } from "../../redux/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
+import {
+  quantityDecrease,
+  quantityIncrease,
+  reset,
+} from "../../redux/cartSlice";
+import { useSession } from "next-auth/react";
+import { toast } from "react-toastify";
 import axios from "axios";
 
 
@@ -113,6 +120,20 @@ const Index = ({ food }) => {
           </div>
         )}
 
+ <button>
+                          <i
+                            className="fa-solid fa-chevron-left mr-3 text-primary"
+                            onClick={() => quantityChange(0, product)}
+                          ></i>
+                        </button>
+                        {product.foodQuantity}
+                        <button>
+                          <i
+                            className="fa-solid fa-chevron-right ml-3 text-primary"
+                            onClick={() => quantityChange(1, product)}
+                          ></i>
+                        </button>
+
         <div className="flex gap-x-4 my-6 md:justify-start justify-center">
           {extraItems.map((item) => (
             <label className="flex items-center gap-x-1" key={item._id}>
@@ -126,7 +147,6 @@ const Index = ({ food }) => {
           ))}
         </div>
         
-<input className="w-5 h-5 accent-primary" placeholder="quantity"/>
 
 <button
           className="btn-primary"
