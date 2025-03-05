@@ -70,7 +70,7 @@ const styles = {
           <div className={`relative flex flex-col ${statusClass(0)}`}>
  <PayPalScriptProvider options={initialOptions}>  
    
-<PayPalButton
+<PayPalButton style={styles} 
 amount=”${order?.total}"
 onSuccess={(details, data) => {
 // Handle successful payment here
