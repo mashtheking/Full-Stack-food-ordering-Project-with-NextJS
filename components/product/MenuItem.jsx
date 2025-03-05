@@ -83,7 +83,7 @@ const quantityChange = (type, price) => {
                             onClick={() => quantityChange(0, product)}
                           ></i>
                         </button>
-                        {product.foodQuantity}
+                       <span className ="bg-white"> {product.foodQuantity} </span>
                         <button>
                           <i
                             className="fa-solid fa-chevron-right ml-3 text-primary"
