@@ -78,7 +78,8 @@ onSuccess={(details, data) => {
 
 />
 
-</PaypalScriptProvider>    
+</PayPalScriptProvider>    
+
             <span>Make your Payment</span>
           </div>
           <div className={`relative flex flex-col ${statusClass(1)}`}>
