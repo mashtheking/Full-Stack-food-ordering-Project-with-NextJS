@@ -71,7 +71,7 @@ const styles = {
  <PayPalScriptProvider options={initialOptions}>  
    
 <PayPalButton style={styles} 
-amount=”${order?.total}"
+amount="${order?.total}"
 onSuccess={(details, data) => {
 // Handle successful payment here
 }}
