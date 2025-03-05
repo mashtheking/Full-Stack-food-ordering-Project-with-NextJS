@@ -35,8 +35,8 @@ const Footer = () => {
               </span>
   </Link>
             </span>
-        
-    </div>
+        </div>
+    <div />
 
  <div className="bg-secondary text-white">
       <div className="container mx-auto pt-16 pb-6">
