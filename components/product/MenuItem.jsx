@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { RiShoppingCart2Fill } from "react-icons/ri";
@@ -9,6 +10,7 @@ import {
   quantityIncrease,
   reset,
 } from "../../redux/cartSlice";
+
 
 const MenuItem = ({ product }) => {
   const cart = useSelector((state) => state.cart);
