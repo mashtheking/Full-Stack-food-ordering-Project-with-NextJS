@@ -62,6 +62,15 @@ const Index = ({ food }) => {
   };
   console.log(food);
 
+const quantityChange = (type, price) => {
+    if (type === 0) {
+      dispatch(quantityDecrease(price));
+    }
+    if (type === 1) {
+      dispatch(quantityIncrease(price));
+    }
+  };
+
   return (
     <div className="flex items-center md:h-[calc(100vh_-_88px)] gap-5 py-20 flex-wrap ">
       <div className="relative md:flex-1 md:w-[80%] md:h-[80%] w-36 h-36 mx-auto">
