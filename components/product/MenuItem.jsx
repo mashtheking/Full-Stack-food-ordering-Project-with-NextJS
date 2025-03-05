@@ -14,6 +14,7 @@ import {
 const MenuItem = ({ product }) => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+const [productState, setProductState] = useState([]);
 
   const findCart = cart.products.find((item) => item._id === product._id);
 
@@ -28,6 +29,7 @@ const MenuItem = ({ product }) => {
       })
     );
   };
+
 const quantityChange = (type, price) => {
     if (type === 0) {
       dispatch(quantityDecrease(price));
@@ -36,10 +38,8 @@ const quantityChange = (type, price) => {
       dispatch(quantityIncrease(price));
     }
   };
-const Cart = ({ userList }) => {
-  const { data: session } = useSession();
 
-  const cart = useSelector((state) => state.cart);
+
 
   useEffect(() => {
     const productTitles = cart.products.map((product) => {
@@ -53,7 +53,7 @@ const Cart = ({ userList }) => {
   }, [cart.products]);
   console.log(productState);  
 
-const [productState, setProductState] = useState([]);
+
 
   return (
     <div className="bg-secondary rounded-3xl relative">
