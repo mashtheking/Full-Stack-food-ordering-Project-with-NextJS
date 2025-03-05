@@ -68,16 +68,17 @@ const styles = {
         </div>
         <div className="flex justify-between w-full p-10 bg-primary mt-6">
           <div className={`relative flex flex-col ${statusClass(0)}`}>
-            
+ <PayPalScriptProvider options={initialOptions}>  
+   
 <PayPalButton
 amount=”${order?.total}"
 onSuccess={(details, data) => {
 // Handle successful payment here
 }}
-options={{
-clientId: ‘AZ9wjyzRaq1x4UehdhLkj2EJEtOYoxUM20xyATjaOAm_LRkEjSw0Ddj9IAbRQOmVjLoBTaybaQgpSqHB’,
-}}
+
 />
+
+</PaypalScriptProvider>    
             <span>Make your Payment</span>
           </div>
           <div className={`relative flex flex-col ${statusClass(1)}`}>
