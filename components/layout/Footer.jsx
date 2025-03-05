@@ -82,9 +82,9 @@ const Footer = () => {
           © 2025 All Rights Reserved By Authentic African Cuisine
         </p>
       </div>
-    </div>
+
 <Link href="/cart">
-            <span className="absolute -bottom-10 -left-10">
+            <span className="absolute bottom-10 left-10">
               <FaShoppingCart
                 className={`hover:text-primary transition-all cursor-pointer`}
               />
@@ -93,6 +93,7 @@ const Footer = () => {
               </span>
             </span>
           </Link>
+    </div>
   );
 };
 
