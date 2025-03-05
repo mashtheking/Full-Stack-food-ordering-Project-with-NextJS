@@ -1,6 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
-import { PayPalScriptProvider, PayPalButton } from "@paypal/react-paypal-js";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const Order = ({ order }) => {
   const status = order?.status;
@@ -70,7 +70,7 @@ const styles = {
           <div className={`relative flex flex-col ${statusClass(0)}`}>
  <PayPalScriptProvider options={initialOptions}>  
    
-<PayPalButton style={styles} 
+<PayPalButtons style={styles} 
 amount="${order?.total}"
 onSuccess={(details, data) => {
 // Handle successful payment here
