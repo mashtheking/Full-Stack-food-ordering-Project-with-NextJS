@@ -28,11 +28,14 @@ const cart = useSelector((state) => state.cart);
 <div>
 <Link href="/cart">
 
-            <span className="fixed bottom-10 left-10 bg-black text-white w-30 h-13 rounded-30">
-Cart 
-              <FaShoppingCart
+            <span className="fixed bottom-10 left-10 w-30 h-13 rounded-30">
+
+<button className="btn-primary">Cart   <FaShoppingCart
                 className={`hover:text-primary transition-all cursor-pointer`}
               />
+</button>
+ 
+            
               <span className="w-8 h-8 text-xs grid place-content-center rounded-full bg-primary absolute -top-2 -right-3 text-black font-bold">
                 {cart.products.length === 0 ? "0" : cart.products.length}
               </span>
