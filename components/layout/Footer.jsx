@@ -35,7 +35,7 @@ const Footer = () => {
               </span>
             </span>
           </Link>
-    
+    </div>
 
 
     <div className="bg-secondary text-white">
